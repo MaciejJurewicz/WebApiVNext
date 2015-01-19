@@ -23,7 +23,7 @@ namespace TodoApi.Controllers
         {
             return _repository.AllItems;
         }
-        [HttpGet("{id:int}", Name = "GetByIdRoute")]
+        [HttpGet("{id:int}", Name = "GetByIdRoute")] //Tu nowy typ zwracany, IAction result pozwalajacy dywersyfikowac czy zwracamy obiekt np czy jednak moze HttpResponda.
         public IActionResult GetById(int id)
         {
             var item = _repository.GetById(id);

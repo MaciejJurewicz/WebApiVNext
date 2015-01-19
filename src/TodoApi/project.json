@@ -9,13 +9,14 @@
         "**.user",
         "**.vspscc"
     ],
+    //Dodawanie dependencies, działające automatycznie z nugetem zdaje się. 
     "dependencies": {
         "Microsoft.AspNet.Server.IIS": "1.0.0-beta1",
         "Microsoft.AspNet.Diagnostics": "1.0.0-beta1",
         "Microsoft.AspNet.Mvc": "6.0.0-beta1",
         "Microsoft.AspNet.Server.WebListener": "1.0.0-beta1"
     },
-
+    //Command line dla debuga w przeglądarce.
     "commands": {
         "web" : "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.WebListener --server.urls http://localhost:5000"
     },
